@@ -38,6 +38,15 @@ h6 {
 	color: #2c3e50;
 }
 
+.heading
+{
+	font-size: 42px;
+}
+.sub-heading
+{
+	font-size: 36px;
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -119,6 +128,15 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+	
+	.heading
+	{
+		font-size: 72px;
+	}
+	.sub-heading
+	{
+		font-size: 52px;
+	}
 }
 
 .navbar {
@@ -235,7 +253,7 @@ section.success a.active {
 
 .text-faded
 {
-	color:rgba(255,255,255,.4);
+	color:rgba(255,255,255,0.40);
 }
 
 .project-name .project-category
