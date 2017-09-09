@@ -17,6 +17,29 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     
     <link href="css/freelancer-modified.css" rel="stylesheet">
+    
+    <script>
+		var yt_int, yt_players={},
+    	initYT = function() {
+        	$(".ytvideo").each(function() {
+            	yt_players[this.id] = new YT.Player(this.id);
+        	});
+    	};
+		$.getScript("//www.youtube.com/player_api", function() {
+    		yt_int = setInterval(function(){
+        		if(typeof YT === "object"){
+            		initYT();
+            		clearInterval(yt_int);
+        		}
+    		},500);
+		});
+		
+		$(document).ready(function(){
+    		$("p").click(function(){
+        		yt_players['player_id'].stopVideo();
+    		});
+		});
+	</script>
 </head>
 
 <body id="myPage" data-spy="scroll">
@@ -158,7 +181,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/Taezu.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -173,7 +196,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/MusicBlast.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -188,7 +211,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/UE4Training.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -203,7 +226,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/OpenGL1.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -218,7 +241,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/SoundWave.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -233,7 +256,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/Bucky2.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -248,7 +271,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/Endure.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -263,7 +286,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/Dodgeball.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -278,7 +301,7 @@
 							</div>
                         </div>
                     </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/Uptown.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -287,6 +310,36 @@
                         <div class="caption-content">
                             <div class="project-name">
 								Mobile Game
+							</div>
+                            <div class="project-category text-faded">
+								In Progress
+							</div>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div class="project-name">
+								Mobile Runner
+							</div>
+                            <div class="project-category text-faded">
+								In Progress
+							</div>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div class="project-name">
+								3D Platformer
 							</div>
                             <div class="project-category text-faded">
 								In Progress
@@ -564,7 +617,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/DYI5QM61j2g" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/DYI5QM61j2g" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="buckyCarousel" class="carousel slide" data-ride="carousel">
@@ -654,7 +707,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/etY37s1t-RU" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/etY37s1t-RU" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="spaceCarousel" class="carousel slide" data-ride="carousel">
@@ -742,7 +795,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/dWmk5zAQjws" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/dWmk5zAQjws" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="desmondCarousel" class="carousel slide" data-ride="carousel">
@@ -830,7 +883,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/dWmk5zAQjws" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/dWmk5zAQjws" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="nigeruCarousel" class="carousel slide" data-ride="carousel">
@@ -879,7 +932,7 @@
 						
 						<p>You can play the build by clicking the 'Play Now' button below</p>
 						<div class="row" style="padding-top:15px">
-							<a href="Content/Game/Desmond/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
+							<a href="Content/Game/Nigeru/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
 						</div>
 						<ul class="list-inline item-details">
 							<li>Client:
@@ -918,7 +971,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/XRvAsGzIKOM" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/XRvAsGzIKOM" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="marioCarousel" class="carousel slide" data-ride="carousel">
@@ -1002,7 +1055,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/dWmk5zAQjws" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/ohq47qFPmFI" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="taezuCarousel" class="carousel slide" data-ride="carousel">
@@ -1051,7 +1104,7 @@
 
 						<p>You can play the build by clicking the 'Play Now' button below</p>
 						<div class="row" style="padding-top:15px">
-							<a href="Content/Game/Desmond/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
+							<a href="Content/Game/TaezuHenka/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
 						</div>
 						<ul class="list-inline item-details">
 							<li>Client:
@@ -1090,7 +1143,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/dWmk5zAQjws" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/S14JNqipOzM" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="musicCarousel" class="carousel slide" data-ride="carousel">
@@ -1178,7 +1231,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/K5184QMGyYQ" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/K5184QMGyYQ" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="ue4demoCarousel" class="carousel slide" data-ride="carousel">
@@ -1266,7 +1319,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/iBywAo54V08" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/iBywAo54V08" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="openglCarousel" class="carousel slide" data-ride="carousel">
@@ -1350,7 +1403,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/TshpQhKsYJo" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/TshpQhKsYJo?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="waveCarousel" class="carousel slide" data-ride="carousel">
@@ -1438,7 +1491,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/JjnAQMBeRzs" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/JjnAQMBeRzs" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="bucky2Carousel" class="carousel slide" data-ride="carousel">
@@ -1526,7 +1579,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/4LdXhVhR71k" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/4LdXhVhR71k" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="endureCarousel" class="carousel slide" data-ride="carousel">
@@ -1614,7 +1667,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/VyqudyjeduE" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/VyqudyjeduE" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="dodgeballCarousel" class="carousel slide" data-ride="carousel">
@@ -1685,7 +1738,7 @@
     <!--Uptown Racers-->
     <div class="portfolio-modal modal fade" id="Uptown" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
+            <div class="close-modal close" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
@@ -1698,7 +1751,7 @@
 						<hr class="star-primary">
 						<h3>Video</h3>
 						<div style="position: relative; width: 100%; height: 0px; padding-bottom: 56%;">
-						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/MtX3gSk3uSY" frameborder="0" allowfullscreen></iframe>
+						<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" class="ytvideo" src="https://www.youtube.com/embed/MtX3gSk3uSY" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<h3 style="padding-top:20px">Screenshots</h3>
 						<div id="uptownCarousel" class="carousel slide" data-ride="carousel">
@@ -1763,7 +1816,7 @@
 								</strong>
 							</li>
 						</ul>
-						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						<button type="button" class="btn btn-default close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>

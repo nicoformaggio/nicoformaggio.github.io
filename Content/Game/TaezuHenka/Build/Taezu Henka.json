@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Taezu Henka.data.unityweb",
+"asmCodeUrl": "Taezu Henka.asm.code.unityweb",
+"asmMemoryUrl": "Taezu Henka.asm.memory.unityweb",
+"asmFrameworkUrl": "Taezu Henka.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

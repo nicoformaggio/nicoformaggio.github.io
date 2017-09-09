@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Nigeru.data.unityweb",
+"asmCodeUrl": "Nigeru.asm.code.unityweb",
+"asmMemoryUrl": "Nigeru.asm.memory.unityweb",
+"asmFrameworkUrl": "Nigeru.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
