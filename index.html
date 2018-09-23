@@ -15,574 +15,474 @@
 
     <!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
     
     <link href="css/freelancer-modified.css" rel="stylesheet">
-    
-    <script>
-		var yt_int, yt_players={},
-    	initYT = function() {
-        	$(".ytvideo").each(function() {
-            	yt_players[this.id] = new YT.Player(this.id);
-        	});
-    	};
-		$.getScript("//www.youtube.com/player_api", function() {
-    		yt_int = setInterval(function(){
-        		if(typeof YT === "object"){
-            		initYT();
-            		clearInterval(yt_int);
-        		}
-    		},500);
-		});
-		
-		$(document).ready(function(){
-    		$("p").click(function(){
-        		yt_players['player_id'].stopVideo();
-    		});
-		});
-	</script>
 </head>
 
 <body id="myPage" data-spy="scroll">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>              
-      </button>
-      <a class="navbar-brand" href="#myPage">Nico Formaggio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="page-scroll"><a href="#portfolio">PORTFOLIO</a></li>
-        <li class="page-scroll"><a href="#about">ABOUT</a></li>
-        <li class="page-scroll"><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header page-scroll">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>              
+		  </button>
+		  <a class="navbar-brand" href="#myPage">Nico Formaggio</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="page-scroll"><a href="#portfolio">PORTFOLIO</a></li>
+			<li class="page-scroll"><a href="#about">ABOUT</a></li>
+			<li class="page-scroll"><a href="#contact">CONTACT</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
 
-<!-- Header -->
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-text">
-                    <span class="name">Nico Formaggio</span>
-                    <span class="skills">Games Design/Programmer - Web Designer</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+	<!-- Header -->
+	<header>
+	  <div class="overlay"></div>
+	  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+		<source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+	  </video>
+	  <div class="container h-100">
+		<div class="d-flex text-center h-100">
+		  <div class="my-auto w-100 text-white intro-text">
+			<h1 class="name">Nico Formaggio</h1>
+			<h2 class="skills">Technical Designer</h2>
+		  </div>
+		</div>
+	  </div>
+	</header>
 
-<section id="portfolio">
-	<div class="container">
-    	<div class="row">
-            <div class="col-lg-12 text-center" style="margin: -15px 0 30px">
-                <h2 class="heading">Portfolio</h2>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="sub-heading">Games Design / Programming</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Bucky" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-							<div class="project-name">
-								Bucky-Ball
-							</div>
-                            <div class="project-category">
-								May 2015
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Bucky.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#SpaceAscend" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Space Ascend
-							</div>
-                            <div class="project-category">
-								December 2015
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Space.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Desmond" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Desmond's Ritual
-							</div>
-                            <div class="project-category">
-								January 2016
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Desmond.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Nigeru" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Nigeru
-							</div>
-                            <div class="project-category">
-								Feburary 2016
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/nigeru.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Mario" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Mario Bros Recreation
-							</div>
-                            <div class="project-category">
-								April 2016
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/mario.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Taezu" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Taezu Henka
-							</div>
-                            <div class="project-category">
-								April 2016
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Taezu.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#MusicBlast" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Music Blast
-							</div>
-                            <div class="project-category">
-								April 2016
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/MusicBlast.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#UE4Demo" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Training Room (UE4 Demo)
-							</div>
-                            <div class="project-category">
-								December 2016
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/UE4Training.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#OpenGL" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								OpenGL Demonstration
-							</div>
-                            <div class="project-category">
-								January 2017
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/OpenGL1.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#SoundWave" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Sound Wave
-							</div>
-                            <div class="project-category">
-								January 2017
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/SoundWave.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Bucky2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Bucky Ball 2
-							</div>
-                            <div class="project-category">
-								April 2017
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Bucky2.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Endure" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Endure
-							</div>
-                            <div class="project-category">
-								April 2017
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Endure.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Dodgeball" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Dodgeball (OpenGL)
-							</div>
-                            <div class="project-category">
-								April 2017
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Dodgeball.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#Uptown" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Uptown Racers
-							</div>
-                            <div class="project-category">
-								April 2017
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Uptown.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Mobile Game
-							</div>
-                            <div class="project-category text-faded">
-								In Progress
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								3D Platformer
-							</div>
-                            <div class="project-category text-faded">
-								In Progress
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/unknown.png" class="img-responsive" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- MODELLING SECTION
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="sub-heading">3D Modelling</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Mobile Environment
-							</div>
-                            <div class="project-category">
-								December 2015
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Mobile Phone &amp; Headphones
-							</div>
-                            <div class="project-category">
-								April 2016
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Project Name
-							</div>
-                            <div class="project-category">
-								Category
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-    -->
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="sub-heading">Web Design</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#PYW" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Phones Your Way
-							</div>
-                            <div class="project-category">
-								March 2015
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/PYW.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#FireBlanket" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Fire Blanket Studios
-							</div>
-                            <div class="project-category">
-								December 2015
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/FireBlanket.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#NicoF" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="project-name">
-								Nico Formaggio Portfolio
-							</div>
-                            <div class="project-category">
-								Ongoing
-							</div>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/Nico.png" class="img-responsive" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>I am currently studying Games Design and Programming at Staffordshire University</p>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- About Section -->
+	<section class="success" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>About</h2>
+					<hr class="star-light">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p>I am currently studying Games Design and Programming at Staffordshire University</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Bucky" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Bucky-Ball
+								</div>
+								<div class="project-category">
+									May 2015
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/Bucky.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#SpaceAscend" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Space Ascend
+								</div>
+								<div class="project-category">
+									December 2015
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/Space.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+  					<span class="badge">Prototype</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Desmond" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Desmond's Ritual
+								</div>
+								<div class="project-category">
+									January 2016
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/Desmond.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+  					<span class="badge">Game Jam</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Nigeru" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Nigeru
+								</div>
+								<div class="project-category">
+									Feburary 2016
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/nigeru.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+  					<span class="badge">Prototype</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Mario" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Mario Bros Recreation
+								</div>
+								<div class="project-category">
+									April 2016
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/mario.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">C++</span>
+  					<span class="badge">SDL</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Taezu" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Taezu Henka
+								</div>
+								<div class="project-category">
+									April 2016
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/Taezu.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+  					<span class="badge">Group Project</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a href="#MusicBlast" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Music Blast
+								</div>
+								<div class="project-category">
+									April 2016
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/MusicBlast.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+  					<span class="badge">Prototype</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#UE4Demo" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Training Room (UE4 Demo)
+								</div>
+								<div class="project-category">
+									December 2016
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/UE4Training.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">UE4</span>
+  					<span class="badge">Blueprint</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#OpenGL" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									OpenGL Demonstration
+								</div>
+								<div class="project-category">
+									January 2017
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/OpenGL1.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">OpenGL</span>
+  					<span class="badge">C++</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a href="#SoundWave" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Sound Wave
+								</div>
+								<div class="project-category">
+									January 2017
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/SoundWave.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+  					<span class="badge">Game Jam</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Bucky2" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Bucky Ball 2
+								</div>
+								<div class="project-category">
+									April 2017
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/Bucky2.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">UE4</span>
+  					<span class="badge">Blueprint</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Endure" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Endure
+								</div>
+								<div class="project-category">
+									April 2017
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/Endure.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">UE4</span>
+  					<span class="badge">Blueprint</span>
+  					<span class="badge">Group Project</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Dodgeball" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Dodgeball (OpenGL)
+								</div>
+								<div class="project-category">
+									April 2017
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/Dodgeball.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">OpenGL</span>
+  					<span class="badge">C++</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#Uptown" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Uptown Racers
+								</div>
+								<div class="project-category">
+									April 2017
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/Uptown.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									Mobile Game
+								</div>
+								<div class="project-category text-faded">
+									In Progress
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a href="" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<div class="project-name">
+									3D Platformer
+								</div>
+								<div class="project-category text-faded">
+									In Progress
+								</div>
+							</div>
+						</div>
+						<img src="img/portfolio/unknown.png" class="img-responsive" alt="">
+					</a>
+					<span class="badge">Unity</span>
+  					<span class="badge">C#</span>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-12">
-                        <h3>Social Media</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/nico.formaggio" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/nico_cheese" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://uk.linkedin.com/in/nicoformaggio" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/106540114025143665177/posts" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Nico Formaggio 2017
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#myPage">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-    
-    <!-- Portfolio Content -->
-    
-    <!-- PROGRAMMING/DESIGN -->
-    
-    <!--Bucky-Ball-->
-    <div class="portfolio-modal modal fade" id="Bucky" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+	<!-- Contact Section -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 style="margin-bottom: 30px">Contact Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+					<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+					<form name="sentMessage" id="contactForm" novalidate>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label>Name</label>
+								<input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label>Email Address</label>
+								<input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label>Phone Number</label>
+								<input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label>Message</label>
+								<textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<br>
+						<div id="success"></div>
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<button type="submit" class="btn btn-success btn-lg">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="text-center">
+		<div class="footer-above">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-12">
+						<h3>Social Media</h3>
+						<ul class="list-inline">
+							<li>
+								<a href="https://www.facebook.com/nico.formaggio" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/nico_cheese" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="https://uk.linkedin.com/in/nicoformaggio" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/u/0/106540114025143665177/posts" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Copyright &copy; Nico Formaggio 2017
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#myPage">
+			<i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+
+	<!-- Portfolio Content -->
+
+	<!--Bucky-Ball-->
+	<div class="portfolio-modal modal fade" id="Bucky" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Bucky Ball</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -635,7 +535,7 @@
 						<p>This game is a rolling ball platformer and the objective of this game is to collect each of the pickups scattered around the level and that will unlock the finish so that you can proceed to the next level.</p>
 						<p>This is my first game that I have made. I made this for a unit at college for the BTEC Level 3 Exdended Diploma in IT course. This game was made using the game engine Unity and everything in the game was developed by me (apart from a couple assets like the skybox and a couple of the sounds).</p>
 						<p>Certain skills that I have used in making this game involves use of C# for all of the scripts in the Unity engine for this game, I have also used design skills to come up with the initial idea and to fully plan and develop the game and levels. Basic 3D Modelling was also used to create the levels and I used Sketchfab to model these.</p>
-						
+
 						<p>You can play the build by clicking the 'Play Now' button below</p>
 						<div class="row" style="padding-top:15px">
 							<a href="Content/Game/Bucky-Ball/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
@@ -655,24 +555,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Space Ascend-->
-    <div class="portfolio-modal modal fade" id="SpaceAscend" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Space Ascend-->
+	<div class="portfolio-modal modal fade" id="SpaceAscend" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Space Ascend</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -723,7 +623,7 @@
 						<h3>Status: Prototype</h3>
 
 						<p></p>
-						
+
 						<p>You can play the build by clicking the 'Play Now' button below</p>
 						<div class="row" style="padding-top:15px">
 							<a href="Content/Game/SpaceAscend/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
@@ -743,24 +643,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Desmond's Ritual-->
-    <div class="portfolio-modal modal fade" id="Desmond" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Desmond's Ritual-->
+	<div class="portfolio-modal modal fade" id="Desmond" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Desmonds Ritual</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -811,7 +711,7 @@
 						<h3>Status: Prototype</h3>
 
 						<p></p>
-						
+
 						<p>You can play the build by clicking the 'Play Now' button below</p>
 						<div class="row" style="padding-top:15px">
 							<a href="Content/Game/Desmond/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
@@ -831,24 +731,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Nigeru-->
-    <div class="portfolio-modal modal fade" id="Nigeru" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Nigeru-->
+	<div class="portfolio-modal modal fade" id="Nigeru" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Nigeru</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -911,7 +811,7 @@
 						<h3>Status: Prototype</h3>
 
 						<p></p>
-						
+
 						<p>You can play the build by clicking the 'Play Now' button below</p>
 						<div class="row" style="padding-top:15px">
 							<a href="Content/Game/Nigeru/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
@@ -931,24 +831,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Mario Bros-->
-    <div class="portfolio-modal modal fade" id="Mario" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Mario Bros-->
+	<div class="portfolio-modal modal fade" id="Mario" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Mario Bros Remake</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -999,7 +899,7 @@
 						<h3>Status: Prototype</h3>
 
 						<p></p>
-						
+
 						<ul class="list-inline item-details">
 							<li>Client:
 								<strong>Staffordshire University
@@ -1015,24 +915,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Taezu Henka-->
-    <div class="portfolio-modal modal fade" id="Taezu" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Taezu Henka-->
+	<div class="portfolio-modal modal fade" id="Taezu" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Taezu Henka</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1115,24 +1015,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Music Blast-->
-    <div class="portfolio-modal modal fade" id="MusicBlast" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Music Blast-->
+	<div class="portfolio-modal modal fade" id="MusicBlast" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Music Blast</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1191,7 +1091,7 @@
 						<h3>Status: Prototype</h3>
 
 						<p></p>
-						
+
 						<p>You can play the build by clicking the 'Play Now' button below</p>
 						<div class="row" style="padding-top:15px">
 							<a href="Content/Game/Desmond/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Play Now</strong></div></a>
@@ -1211,24 +1111,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--UE4 Training-->
-    <div class="portfolio-modal modal fade" id="UE4Demo" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--UE4 Training-->
+	<div class="portfolio-modal modal fade" id="UE4Demo" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Training Room - UE4 Demo</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1299,24 +1199,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--OpenGL Demo-->
-    <div class="portfolio-modal modal fade" id="OpenGL" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--OpenGL Demo-->
+	<div class="portfolio-modal modal fade" id="OpenGL" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>OpenGL Demonstration</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1359,7 +1259,7 @@
 						<h3>Status: Prototype</h3>
 
 						<p></p>
-						
+
 						<ul class="list-inline item-details">
 							<li>Client:
 								<strong>Staffordshire University
@@ -1375,24 +1275,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Sound Wave-->
-    <div class="portfolio-modal modal fade" id="SoundWave" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Sound Wave-->
+	<div class="portfolio-modal modal fade" id="SoundWave" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Sound Wave</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1471,24 +1371,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Bucky-Ball 2-->
-    <div class="portfolio-modal modal fade" id="Bucky2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Bucky-Ball 2-->
+	<div class="portfolio-modal modal fade" id="Bucky2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Bucky Ball 2</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1567,24 +1467,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Endure-->
-    <div class="portfolio-modal modal fade" id="Endure" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Endure-->
+	<div class="portfolio-modal modal fade" id="Endure" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Endure</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1639,7 +1539,7 @@
 						<h3>Status: Final</h3>
 
 						<p></p>
-						
+
 						<p>You can download the build by clicking the 'Download Now' button below</p>
 						<div class="row" style="padding-top:15px">
 							<a href="Content/Game/Desmond/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>Download Now</strong></div></a>
@@ -1659,24 +1559,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Dodgeball-->
-    <div class="portfolio-modal modal fade" id="Dodgeball" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Dodgeball-->
+	<div class="portfolio-modal modal fade" id="Dodgeball" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Dodgeball OpenGL</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1747,24 +1647,24 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Uptown Racers-->
-    <div class="portfolio-modal modal fade" id="Uptown" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal close" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Uptown Racers-->
+	<div class="portfolio-modal modal fade" id="Uptown" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal close" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
 						<h2>Uptown Racers</h2>
 						<hr class="star-primary">
 						<h3>Video</h3>
@@ -1839,275 +1739,29 @@
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- WEB DESIGN -->
-    
-    <!--Phones Your Way-->
-    <div class="portfolio-modal modal fade" id="PYW" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-						<h2>Phones Your Way</h2>
-						<hr class="star-primary">
-						<h3>Screenshots</h3>
-						<div id="PYWCarousel" class="carousel slide" data-ride="carousel">
-						  <!-- Indicators -->
-						  <ol class="carousel-indicators">
-							<li data-target="#PYWCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#PYWCarousel" data-slide-to="1"></li>
-							<li data-target="#PYWCarousel" data-slide-to="2"></li>
-							<li data-target="#PYWCarousel" data-slide-to="3"></li>
-							<li data-target="#PYWCarousel" data-slide-to="4"></li>
-						  </ol>
-
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner" role="listbox">
-							<div class="item active">
-							  <img src="img/portfolio/Web/PYW/0.png" alt="Screenshot1">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/PYW/1.png" alt="Screenshot2">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/PYW/2.png" alt="Screenshot3">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/PYW/3.png" alt="Screenshot4">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/PYW/4.png" alt="Screenshot5">
-							</div>
-						  </div>
-
-						  <!-- Left and right controls -->
-						  <a class="left carousel-control" href="#PYWCarousel" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						  </a>
-						  <a class="right carousel-control" href="#PYWCarousel" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						  </a>
-						</div>
-
-						<h3>Status: WIP</h3>
-
-						<p></p>
-
-						<p>You can view a preview of this website by clicking the 'View Now' button below</p>
-						<div class="row" style="padding-top:15px">
-							<a href="Content/Web/PYW/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>View Now</strong></div></a>
-						</div>
-						<ul class="list-inline item-details">
-							<li>Client:
-								<strong>Aylesbury College
-								</strong>
-							</li>
-							<li>Date:
-								<strong>March 2015
-								</strong>
-							</li>
-							<li>Service:
-								<strong>Web Development
-								</strong>
-							</li>
-						</ul>
-						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Fire Blanket-->
-    <div class="portfolio-modal modal fade" id="FireBlanket" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-						<h2>Fire Blanket Studios</h2>
-						<hr class="star-primary">
-						<h3>Screenshots</h3>
-						<div id="FireBlanketCarousel" class="carousel slide" data-ride="carousel">
-						  <!-- Indicators -->
-						  <ol class="carousel-indicators">
-							<li data-target="#FireBlanketCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#FireBlanketCarousel" data-slide-to="1"></li>
-							<li data-target="#FireBlanketCarousel" data-slide-to="2"></li>
-							<li data-target="#FireBlanketCarousel" data-slide-to="3"></li>
-						  </ol>
-
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner" role="listbox">
-							<div class="item active">
-							  <img src="img/portfolio/Web/FireBlanket/0.png" alt="Screenshot1">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/FireBlanket/1.png" alt="Screenshot2">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/FireBlanket/2.png" alt="Screenshot3">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/FireBlanket/3.png" alt="Screenshot4">
-							</div>
-						  </div>
-
-						  <!-- Left and right controls -->
-						  <a class="left carousel-control" href="#FireBlanketCarousel" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						  </a>
-						  <a class="right carousel-control" href="#FireBlanketCarousel" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						  </a>
-						</div>
-
-						<h3>Status: WIP (Cancelled)</h3>
-
-						<p></p>
-						
-						<p>You can view a preview of this website by clicking the 'View Now' button below</p>
-						<div class="row" style="padding-top:15px">
-							<a href="Content/Web/FireBlanket/index.html" target="_blank"><div class="col-md-6 col-md-offset-3 btn btn-success btn-lg"><strong>View Now</strong></div></a>
-						</div>
-						<ul class="list-inline item-details">
-							<li>Client:
-								<strong>Fire Blanket Studios
-								</strong>
-							</li>
-							<li>Date:
-								<strong>December 2015
-								</strong>
-							</li>
-							<li>Service:
-								<strong>Web Development
-								</strong>
-							</li>
-						</ul>
-						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!--Nico Portfolio-->
-    <div class="portfolio-modal modal fade" id="NicoF" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-						<h2>Nico Formaggio's Portfolio</h2>
-						<hr class="star-primary">
-						<h3>Screenshots</h3>
-						<div id="NicoCarousel" class="carousel slide" data-ride="carousel">
-						  <!-- Indicators -->
-						  <ol class="carousel-indicators">
-							<li data-target="#NicoCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#NicoCarousel" data-slide-to="1"></li>
-							<li data-target="#NicoCarousel" data-slide-to="2"></li>
-							<li data-target="#NicoCarousel" data-slide-to="3"></li>
-							<li data-target="#NicoCarousel" data-slide-to="4"></li>
-						  </ol>
-
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner" role="listbox">
-							<div class="item active">
-							  <img src="img/portfolio/Web/Nico/0.png" alt="Screenshot1">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/Nico/1.png" alt="Screenshot2">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/Nico/2.png" alt="Screenshot3">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/Nico/3.png" alt="Screenshot4">
-							</div>
-							<div class="item">
-							  <img src="img/portfolio/Web/Nico/4.png" alt="Screenshot4">
-							</div>
-						  </div>
-
-						  <!-- Left and right controls -->
-						  <a class="left carousel-control" href="#NicoCarousel" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						  </a>
-						  <a class="right carousel-control" href="#NicoCarousel" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						  </a>
-						</div>
-
-						<h3>Status: Live (In Development)</h3>
-
-						<p></p>
-
-						<ul class="list-inline item-details">
-							<li>Client:
-								<strong>Nico Formaggio
-								</strong>
-							</li>
-							<li>Date:
-								<strong>In Progress
-								</strong>
-							</li>
-							<li>Service:
-								<strong>Web Development
-								</strong>
-							</li>
-						</ul>
-						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- jQuery -->
-    <script src="js/jquery.js"></script>
+	<script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+	<!-- Plugin JavaScript -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+	<!-- Contact Form JavaScript -->
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script src="js/contact_me.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+	<!-- Custom Theme JavaScript -->
+	<script src="js/freelancer.js"></script>
 
 </body>
 </html>
