@@ -564,6 +564,11 @@ footer .footer-below {
     opacity: 0;
 }
 
+.contribution-text
+{
+	padding-bottom: 20px;
+}
+
 .item {
 	margin:auto auto -30px;
 }
