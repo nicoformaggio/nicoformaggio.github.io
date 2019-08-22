@@ -1,9 +1,15 @@
 {
-"TOTAL_MEMORY": 268435456,
+"companyName": "Emergency Ramen",
+"productName": "Taezu Henka",
+"productVersion": "1.0",
 "dataUrl": "Taezu Henka.data.unityweb",
-"asmCodeUrl": "Taezu Henka.asm.code.unityweb",
-"asmMemoryUrl": "Taezu Henka.asm.memory.unityweb",
-"asmFrameworkUrl": "Taezu Henka.asm.framework.unityweb",
+"wasmCodeUrl": "Taezu Henka.wasm.code.unityweb",
+"wasmFrameworkUrl": "Taezu Henka.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
-"backgroundColor": "#231F20"
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0a3"
 }
